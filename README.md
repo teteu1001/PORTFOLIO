@@ -193,7 +193,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 - **GitHub**: [@teteu1001](https://github.com/teteu1001)
 - **LinkedIn**: [Mateus Martins](https://abrir.link/kQVxy)
 - **Instagram**: [@teteu10_01](https://www.instagram.com/teteu10_01/)
-- **Email**: mateus@example.com
+- **Email**: mateusmm20231.4@gmail.com
 
 ---
 
