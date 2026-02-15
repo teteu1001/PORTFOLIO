@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class = "header">
+      <a href="#Home" class = "logo"> Mateus <span>Martins</span> </a>
+
+      <div class="menu-icon">
+        <i class="bx bx-menu" id = "menu-icon"></i>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#Home" class="nav-link">Home</a></li>
+          <li><a href="#About" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#Projects" class="nav-link">Projetos</a></li>
+          <li><a href="#Skills" class="nav-link">Habilidades</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="bx bx-moon" id="theme-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section id="Home" class="home">
+      <div class="home-content">
+        <h1>Olá, Eu sou o <span>Mateus</span></h1>
+        <h3>Desenvolvedor <span>Full Stack</span> Criativo</h3>
+        <p>Sou desenvolvedor apaixonado por criar experiências digitais incríveis. Especializado em transformar ideias em soluções web modernas, responsivas e de alta performance. Domino todo o stack tecnológico, do design à implementação, garantindo resultados que superam expectativas.
+
+          Vamos construir algo incrível juntos?</p>
+    
+        <div class="social-icons">
+          <a href="https://github.com/teteu1001"><i class="bx bxl-github"></i></a>
+          <a href="https://abrir.link/kQVxy"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/teteu10_01/"><i class="bx bxl-instagram"></i></a>
+        </div>
+    
+        <div class="btn-group">
+          <a href="#Projects" class="btn btn-primary">Ver Projetos</a>
+        </div>
+      </div>
+    
+      <div class="home-img">
+        <div class="img-wrapper">
+          <img src="verde.jpeg" alt="Mateus Martins" />
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="Projects">
+      <h2 class="heading" data-aos="fade-up">Meus <span>Projetos</span></h2>
+      
+      <div class="projects-container">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img">
+            <img src="data:image/jpeg;base64,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" alt="Cafeteria Project" />
+          </div>
+          <div class="project-content">
+            <h3>Cafeteria Digital</h3>
+            <p>Sistema completo para cafeteria com menu digital, pedidos online e gestão de mesas.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://cafeteria-gules-ten.vercel.app/" class="btn btn-small"><i class="bx bx-link-external"></i> Demo</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="bx bxl-github"></i> Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBx10K9krZer00VS7OGD1I5_Ml0al92kZaA&s" alt="Pizzaria Project" />
+          </div>
+          <div class="project-content">
+            <h3>Pizza Express</h3>
+            <p>Site para pizzaria com cardápio interativo, sistema de delivery e acompanhamento de pedidos.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://teteu1001.github.io/PIZZARIA/" class="btn btn-small"><i class="bx bx-link-external"></i> Demo</a>
+              <a href="#" class="btn btn-small btn-outline"><i class="bx bxl-github"></i> Código</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img">
+            <img src="https://www.ionos.com/pt-br/digitalguide/fileadmin/DigitalGuide/Screenshots/creating-a-wordpress-blog.png" alt="Blog Flask Project" />
+          </div>
+          <div class="project-content">
+            <h3>Blog Platform</h3>
+            <p>Sistema de blog completo com Flask, gerenciamento de posts, comentários e autenticação de usuários.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>SQLAlchemy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/teteu1001/BLOG_FLASK" class="btn btn-small btn-outline"><i class="bx bxl-github"></i> Código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="About">
+      <div class="about-img">
+        <img src="magem 2.jpg" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2>
+          Sobre <span> Mim</span>
+        </h2>
+        <div class="about-text">
+          <p>
+            Sou o Mateus, um desenvolvedor Full Stack apaixonado por tecnologia e inovação. Minha jornada começou com HTML e CSS, mas evolui rapidamente para dominar todo o ecossistema de desenvolvimento web.
+          </p>
+          <p>
+            Com sólida experiência em desenvolvimento Front-End e Back-End, combino criatividade com técnica para criar soluções digitais que não apenas funcionam bem, mas também encantam usuários. Meu foco é sempre em escrever código limpo, maintainable e escalável.
+          </p>
+          <p>
+            Além do desenvolvimento, tenho paixão por数据分析 e Business Intelligence, utilizando Power BI para transformar dados brutos em insights acionáveis que impulsionam decisões estratégicas.
+          </p>
+        </div>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Projetos Concluídos</p>
+          </div>
+          <div class="stat-item">
+            <h3>3+</h3>
+            <p>Anos de Experiência</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Comprometimento</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <section class="skills" id="Skills">
+      <h2 class="heading" data-aos="fade-up">Minhas <span>Habilidades</span></h2>
+      
+      <div class="skills-container">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="bx bx-code-alt"></i> Front-End</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>CSS3</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="60"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React</span>
+                <span>30%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="30"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="bx bx-server"></i> Back-End</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="50"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span>20%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="20"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Flask</span>
+                <span>50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="50"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SQL</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="60"></div>
+              </div>
+            </div>
+         </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="bx bx-bar-chart"></i> Data & Analytics</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Power BI</span>
+                <span>35%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="35"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Excel</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+
+
+      <ul class = "list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#Projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#Skills">Habilidades</a>
+        </li>
+        <li>
+          <a href="#About">Sobre Mim</a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        &copy; 2024 Mateus Martins. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
